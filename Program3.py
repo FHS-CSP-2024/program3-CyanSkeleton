@@ -13,27 +13,23 @@
 
 name = "Tim Tester"
 age = 20
-skill1 = "python"
-level1 = "beginner"
-skill2 = "java"
-level2 = "veteran"
-skill3 = "programming"
-level3 = "semiprofessional"
+skills = ["python", "java", "programming"]
+levels = ["beginner", "veteran", "semiprofessional"]
 lower = 2000
 upper = 3000
 
-print("my name is ", name, " , I am ", age, "years old")
+print("my name is ", name, " , I am ", age, "years old\n")
 print("my skills are")
-print("- ", skill1, " (", level1, ")")
-print("- ", skill2, " (", level2, ")")
-print("- ", skill3, " (", level3, " )")
-print("I am looking for a job with a salary of", lower, "-", upper, "dollars per month")
+for x in range(len(skills)):
+    print("- ", skills[x], " (" + levels[x] + ")")
+print("\nI am looking for a job with a salary of", str(lower) + "-" + str(upper), "dollars per month")
 
 
 
 
 
 ## Problem 2 ##
+print()
 #Please finish the script so that: 
 # - the following output is printed:
 # Sample output:
@@ -51,3 +47,7 @@ print("I am looking for a job with a salary of", lower, "-", upper, "dollars per
 x = input("X val: ")
 y = input("Y val: ")
 
+print(x,"+", y, "=", int(x) + int(y))
+print(x,"-", y, "=", int(x) - int(y))
+print(x,"*", y, "=", int(x) * int(y))
+print(x,"/", y, "=", int(x) / int(y))
